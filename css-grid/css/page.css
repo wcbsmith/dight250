@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+
+body {
+	font-size: 1.5em;
+	font-family: Acme, sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.container > * {
+  color: #fff;
+  padding: 1em;
+}
+
+header { background-color: #a3a948; }
+
+nav { background-color: #edb92e;}
+
+main { background-color: #f85931; }
+
+aside { background-color: #ce1836; }
+
+footer { background-color: #009989; }

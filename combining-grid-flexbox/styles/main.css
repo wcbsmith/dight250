@@ -1,0 +1,83 @@
+:root {
+    --dark-text: #0c0d02;
+    --light-text: #fdfdfd;
+    --primary-color: rgb(61, 107, 71);
+    --primary-color-hover: rgba(61, 107, 71, .75);
+    --secondary-color: #b5b479;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Merriweather, serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--dark-text);
+}
+
+header,
+footer {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    font-family: "Archivo Narrow", sans-serif;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    width: 95%;
+    margin: 2rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-gap: 1rem;
+}
+
+.card {
+    border-radius: .25rem;
+    border: 1px solid var(--secondary-color);
+    padding: 1.5rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card h1 {
+    margin: .25rem 0;
+    color: var(--primary-color);
+}
+
+.card p {
+    margin-bottom: 2rem;
+}
+
+.material-icons {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .95rem;
+    border-radius: .25rem;
+
+    margin-top: auto; /*Only works for top and bottom when a flex item in a flex container.*/
+}
+
+.btn:hover {
+    background-color: var(--primary-color-hover);
+}
+

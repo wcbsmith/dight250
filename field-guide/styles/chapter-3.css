@@ -1,0 +1,9 @@
+body {
+	counter-reset: h3Count;
+}
+
+h3::before {
+	content: counter(h3Count) ") ";
+	counter-increment: h3Count ;
+		
+}

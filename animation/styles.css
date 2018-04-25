@@ -1,0 +1,58 @@
+:root {
+  --background-light: #c0c0c0;
+  --bakcground-dark: #111111;
+  --pacman-primary: #ffff00;
+  --magic-primary: #5f9ea0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--background-light);
+}
+
+hr {
+  width: 100%;
+  margin: 2rem 0 1rem;
+}
+
+hr + hr { margin-top: 0; }
+
+.pacman {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--bakcground-dark);
+}
+
+.pacman-top,
+.pacman-bottom {
+  width: 200px;
+  height: 100px;
+  background-color: var(--pacman-primary);
+}
+
+.pacman-top { border-radius: 100px 100px 0 0; }
+
+.pacman-bottom { border-radius: 0 0 100px 100px; }
+
+.magic-square {
+  width: 200px;
+  height: 200px;
+  background-color: var(--magic-primary);
+}
+
+.marty-mcfly {
+  width: 100px;
+  height: 147px;
+  background-image: url("images/marty.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}

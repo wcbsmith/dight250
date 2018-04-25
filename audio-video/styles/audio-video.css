@@ -1,0 +1,37 @@
+body { background-color: #bfbabe; }
+
+audio,
+video {
+	max-width: 100%;
+	background-color: #fff;
+}
+
+section {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	padding: 35px;
+	margin: 0 auto;
+	background-color: #558a86;
+}
+
+section > div {
+	flex-grow: 1;
+	text-align: center;
+}
+
+section > div:last-child { margin-top: 125px; }
+
+h1,
+h3 {
+	color: #f1f2f0;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+h1 {
+	margin: 35px 0;
+	color: #a63e14;
+}

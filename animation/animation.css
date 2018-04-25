@@ -1,0 +1,101 @@
+@keyframes square-to-circle {
+    0% {
+        transform: rotate(0);
+        border-radius: 0;
+
+    }
+
+    25% {
+        transform: rotate(45deg);
+        background-color: red;
+        border-radius: 50% 0 0 0;
+        
+    }
+
+    50% {
+        transform: rotate(90deg);
+        border-radius: 50% 50% 0 0;
+    }
+
+    75% {
+        transform: rotate(135deg);
+        border-radius: 50% 50% 50% 0;
+    }
+
+    100% {
+        border-radius: 50%;
+        transform: rotate(180deg);
+    }
+}
+
+.magic-square:hover {
+    animation-name: square-to-circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes move-top {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform:rotate(-35deg);
+    }
+}
+
+.pacman-top {
+    animation-name: move-top;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-bottom {
+    0% {
+        transform: rotate(0);
+        transform: translate(0 0);
+    }
+    50% {
+        transform:rotate(35deg);
+        transform: translate(50px 0);
+    }
+}
+
+.pacman-bottom {
+    animation-name: move-bottom;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-pacman {
+    0% {
+        transform: translate(10 0);
+    }
+
+    100% {
+        transform: translate(20 0);
+    }
+}
+
+.pacman {
+    position: relative;
+    animation-name: move-pacman;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+}
+
+@keyframes hoverboard {
+    100% {
+        background-position: -300px;
+    }
+}
+
+.marty-mcfly {
+    animation: hoverboard .65s steps(3) infinite;
+}

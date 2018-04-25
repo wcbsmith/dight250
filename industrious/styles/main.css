@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #d1caa1;
+    --dark-text: #32213a;
+    --header-footer: #66717edd;
+    --light-text: #D4D6B9;
+    --light-text-hover: #66717e;
+    --paragraph-background: #66717e91;
+}
+
+body {
+    color: var(--dark-text);
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.main-wrapper {
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 150px 400px 80px 100px; */
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 5.5rem 50vh 20vh 3rem; */
+    grid-template-areas: "header" "hero" "sub-hero" "footer";
+    grid-gap: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    
+    
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    padding: 0 1rem;
+    height: 5.5rem;
+}
+
+nav {
+    text-align: center;
+    /* margin: auto; */
+    /* margin-right: 1rem; */
+}
+
+nav a {
+    display: block;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+nav a:hover {
+    color: var(--light-text-hover);
+}
+
+.hero {
+    grid-area: hero;
+    background-image: url("../images/main-image1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 1rem;
+    /* max-height: 500px; */
+    height: 50vh;
+}
+
+.sub-hero {
+    grid-area: sub-hero;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 250px));
+    grid-gap: 1rem;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: blue;
+    /* width: 100%; */
+    margin: 0 1rem;
+    justify-content: space-around;
+    
+}
+
+.mason {
+    display: inline-block;
+    background-color: green;
+    border: solid;
+    border-color: black;
+    border-width: 4px;
+    min-height: 100px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--dark-text);
+    height: 3rem;
+    align-self: flex-end;
+}
+
+.content {
+    margin: 1rem;
+    background-color: var(--paragraph-background);
+    padding: .5rem;
+}
+
+.large-scale {
+    background-image: url("../images/large-scale.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0 1rem;
+    height: 50vh;
+}
+
+.little {
+    background-image: url("../images/one-man.jpg");
+    background-position: top;
+    background-size: contain;
+    margin: 0 20%;
+    height: 50vh;
+}
+
+h6 {
+    color: var(--light-text);
+    text-align: center;
+}
+
+/* @media (min-width: 525px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-areas: "hero" "subhero";
+    }
+
+    .sub-hero {
+
+    }
+} */

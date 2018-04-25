@@ -1,0 +1,114 @@
+:root {
+    --header: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: #08309e; */
+    background-image: url('../images/discovery-take-off.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: var(--header);
+    background-color: #151515;
+    /*When using flexbox properties must be used on the parent container to define how things are aligned within that container.*/
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+footer p {
+    /* text-align: center; */
+    color: #000000;
+    margin: auto;
+}
+
+main {
+    background-color: #4179bfee;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+a:hover {
+    transition-duration: 250ms;
+    transform:  translateY(-3px);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    display: inline-block;
+    /* flex-grow:2; */
+}
+
+title {
+    font-family: 'Righteous', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+nav {
+    margin-left: auto;
+    padding: 0 4rem;
+}
+
+nav a {
+    padding: 0 2rem;
+}
+
+div {
+    display: flex;
+    align-items: flex-start;
+}
+
+div img {
+    height: 50px;
+}
+
+div img:hover {
+    transition-duration: 1s;
+    transform: translate(100vw);
+}
+
+@media (max-width: 500px) {
+    html {
+        background-color: #151515;
+    }
+
+    a {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+        height: 8rem;
+        
+    }
+
+    nav {
+        margin: auto;
+        text-align: center;
+    }
+}

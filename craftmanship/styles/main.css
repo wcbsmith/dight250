@@ -1,0 +1,118 @@
+*{ box-sizing: border-box;}
+
+:root {
+    --base-color: #92140C;
+    --base-color-hover: #92140Cee;
+    --accent-color: #BE5A38;
+    --background-color: #35323886;
+    --text-color: #C1B4AE;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    margin: 0;
+    padding: 0;
+    /* background-image: url(../images/paint); */
+    /* align-items: center; */
+}
+
+body {
+    background-image: url("../images/paint.jpg");
+    background-size: cover;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    background-color: var(--base-color);
+}
+
+main {
+    grid-area: main;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* grid-template-areas: "front-page" "landing-text"; */
+    /* grid-template-areas: "hero" "hero" "hero" "sub-hero1" "sub-hero2" "sub-hero3"; */  
+    grid-gap: 1rem;
+    margin: auto 5%;
+    background-color: var(--background-color);
+}
+
+.front-page {
+    grid-area: front-page;
+    display: inline-block;
+    height: 500px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--base-color);
+}
+
+h1 {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    margin: 2rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+p {
+    display: inline-block;
+}
+
+div {
+    background-color: green;
+}
+
+div img {
+    display: inline-block;
+    margin: auto;
+}
+
+/* nav img {
+    display: inline-block;
+    width: 33%;
+    
+    
+} */
+/* .hero {
+    grid-area: hero;
+    background-color: blue;
+}
+
+.sub-hero1 {
+    grid-area: sub-hero1;
+    background-color: red;
+
+}
+
+.sub-hero2 {
+    grid-area: sub-hero2;
+}
+
+.sub-hero3 {
+    grid-area: sub-hero3;
+} */

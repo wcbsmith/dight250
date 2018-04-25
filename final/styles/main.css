@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #43464b;
+    --accent-color: #247ba0;
+    --highlight-color: #96bbbb;
+    --text-color-light: #fffcff;
+    --text-color-dark: #010400;
+
+    /* pokemon grid colors */
+    --pokemon-1: #c62e29;
+    --pokemon-2: #fcfef1;
+    --pokemon-3: #fff035;
+    --pokemon-4: #1d71b9;
+
+    /*Avatar grid colors*/
+    --avatar-1: #5E8aa7;
+    --avatar-2: #e5d36d;
+    --avatar-3: #36651d;
+    --avatar-4: #9e301c;
+
+    /*Jackie Chan Adventures colors*/
+    --jackie-1: #5f7ca4;
+    --jackie-2: #d4641c;
+    --jackie-3: #cea502;
+    --jackie-4: #cccccc;
+
+    /*Static Shock grid colors*/
+    --static-1: #e5bf20;
+    --static-2: #2d3081;
+    --static-3: #ade687;
+    --static-4: #115e84;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem auto 1.5rem;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    background-color: var(--highlight-color);
+}
+
+button {
+    margin: auto 1rem;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+h1 {
+    /* margin: .5rem; */
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    display: block;
+    background-color: var(--accent-color);
+    height: auto;
+    margin: 1rem auto;
+    /*border-style: solid;
+    border-width: 3px;*/
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--highlight-color);
+    border-width: 5px;
+    max-width: 350px;
+
+}
+
+.subject {
+    margin: 1rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px 5px;
+    padding: 7px;
+    margin: 1rem auto;
+    height: 200px;
+    width: 200px;
+    background-color: var(--text-color-dark);
+    border-radius: 5%;
+}
+
+/*Pokemon Color Grid*/
+.color-grid.pokemon > .grid-1 {
+    background-color: var(--pokemon-1);
+    border-top-left-radius: 5%;
+}
+
+.color-grid.pokemon > .grid-2 {
+    background-color: var(--pokemon-2);
+    border-top-right-radius: 5%;
+}
+
+.color-grid.pokemon > .grid-3 {
+    background-color: var(--pokemon-3);
+    border-bottom-left-radius: 5%;
+}
+
+.color-grid.pokemon > .grid-4 {
+    background-color: var(--pokemon-4);
+    border-bottom-right-radius: 5%;
+}
+
+/*Avatar Color Grid*/
+.color-grid.avatar > .grid-1 {
+    background-color: var(--avatar-1);
+    border-top-left-radius: 5%;
+}
+
+.color-grid.avatar > .grid-2 {
+    background-color: var(--avatar-2);
+    border-top-right-radius: 5%;
+}
+
+.color-grid.avatar > .grid-3 {
+    background-color: var(--avatar-3);
+    border-bottom-left-radius: 5%;
+}
+
+.color-grid.avatar > .grid-4 {
+    background-color: var(--avatar-4);
+    border-bottom-right-radius: 5%;
+}
+
+/*Jackie Chan Color Grid*/
+.color-grid.jackie > .grid-1 {
+    background-color: var(--jackie-1);
+    border-top-left-radius: 5%;
+}
+
+.color-grid.jackie > .grid-2 {
+    background-color: var(--jackie-2);
+    border-top-right-radius: 5%;
+}
+
+.color-grid.jackie > .grid-3 {
+    background-color: var(--jackie-3);
+    border-bottom-left-radius: 5%;
+}
+
+.color-grid.jackie > .grid-4 {
+    background-color: var(--jackie-4);
+    border-bottom-right-radius: 5%;
+}
+
+/*Jackie Chan Color Grid*/
+.color-grid.static > .grid-1 {
+    background-color: var(--static-1);
+    border-top-left-radius: 5%;
+}
+
+.color-grid.static > .grid-2 {
+    background-color: var(--static-2);
+    border-top-right-radius: 5%;
+}
+
+.color-grid.static > .grid-3 {
+    background-color: var(--static-3);
+    border-bottom-left-radius: 5%;
+}
+
+.color-grid.static > .grid-4 {
+    background-color: var(--static-4);
+    border-bottom-right-radius: 5%;
+}
+
+footer {
+    height: 2rem;
+    background-color: var(--highlight-color);
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        /* grid-template-columns: 1fr 1fr; */
+        margin: 1rem;
+        max-width: 800px;
+    }
+
+    .subject {
+        max-width: 50%;
+    }
+
+    .color-grid {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}

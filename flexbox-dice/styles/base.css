@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+
+html,
+body { height: 100vh; }
+
+body { background: #444; }
+
+[class$="face"] {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10%;
+    background-color: #e7e7e7;
+}
+
+.pip {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #333;
+}

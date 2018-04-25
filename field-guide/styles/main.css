@@ -1,0 +1,85 @@
+* { box-sizing: border-box; }
+
+html { background-image: url("../images/pattern.jpg"); }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  max-width: 1200px;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+header img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+footer img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  border-bottom: 2px solid;
+}
+
+h1,
+h2 { color: #00718f; }
+
+h1 + h2 { margin-top: 0; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #dcf1f9;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #5ca5ba;
+}
+
+nav h2 { margin: 0; }
+
+nav li {
+  max-width: 400px;
+  padding: .25rem 0;
+}
+
+nav span {
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: .5rem;
+  border-radius: 5px;
+  color: #dcf1f9;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.current { background-color: #00718f; }
+
+strong { color: #333; }
