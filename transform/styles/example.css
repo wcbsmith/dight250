@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v10/FeVQS0BTqb0h60ACH55Q2J5hm24.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #6c6368;
+  color: #fff;
+  font-family: Bangers, cursive;
+}
+
+body > div {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px dotted;
+  border-radius: 10px;
+}
+
+body > div:nth-of-type(2) { color: #000; }
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+section > div {
+  min-height: 200px;
+  width: 200px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid;
+}
+
+.demo1 { background-color: #eaa353; }
+.demo2 { background-color: #95a131; }
+.demo3 { background-color: #ee0b5b; }
+.demo4 { background-color: #1bb0ce; }
+.demo5 { background-color: #f7d683; }
+.demo6 { background-color: #8c2318; }

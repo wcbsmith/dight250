@@ -1,0 +1,89 @@
+:root {
+    --background: #008C9E;
+    --primary: #de4126;
+    --secondary: #f8db9a;
+    --highlight: #8eb2c5;
+    --light: #dddddd;
+}
+
+svg {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+/* Background */
+
+.background-circle {
+    fill: var(--background);
+    stroke: var(--primary);
+    stroke-width: 15px;
+}
+
+/* Clouds */
+
+path {
+    fill: none;
+    stroke: var(--light);
+    stroke-width: 2px;
+}
+
+/* Chimney */
+
+.chimney {
+    fill: var(--secondary);
+}
+
+.chimney-topper {
+    fill: var(--primary);
+}
+
+/* House */
+
+.roof {
+    fill: var(--primary);
+}
+
+.body {
+    fill: var(--secondary);
+}
+
+/* Door */
+
+.door {
+    fill: var(--primary);
+}
+
+.door-knob {
+    fill: var(--secondary);
+}
+
+/* Windows */
+
+.windows {
+    transform: translate(72px, 110px);
+}
+
+.window-pane {
+    fill: var(--highlight);
+}
+
+.window-sill {
+    stroke: var(--primary);
+    stroke-width: 4px;
+}
+
+.right-window {
+    transform: translate(94px, 0);
+}
+
+/* Text */
+text {
+    fill: var(--highlight);
+    stroke: var(--primary);
+    stroke-width: 2px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    font-variant: small-caps;
+  }

@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --background-main: #392F25;
+    --background-accent: #9F9A94aa;
+    --text-light: #C2C2C2;
+    --text-dark: #79756C;
+}
+
+body {
+    background-color: var(--background-main);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr 2rem;
+    height: 100vh;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo svg {
+    display: inline-block;
+    width: 50px;
+    margin: 0 auto;
+    padding: 5px;
+    fill: var(--text-dark);
+}
+
+h1 {
+    display: none;
+    text-decoration: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--background-accent);
+}
+
+.hero {
+    /* width: 100%; */
+    background-size: cover;
+}
+
+main p {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-family: 'PT Sans', sans-serif;
+    max-width: 75vw;
+    margin: auto auto;
+}
+
+footer {
+    height: 1.5rem;
+    background-color: var(--background-accent);
+}
+
+footer p {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.main-image {
+    grid-area: main-image;
+}
+
+.main-text {
+    grid-area: main-text;
+}
+
+audio {
+    display: block;
+    margin: 1rem  auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+video {
+    width: 80vw;
+    margin: auto;
+}
+
+/* main.home-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main-image", "main-text";
+} */
+
+
+@media (min-width: 500px) {
+    .hero {
+        margin: 0 auto;
+        max-height: 75vh;
+        max-width: 50vw;
+    }
+
+    h1 {
+        display: inline-block;
+        color: var(--text-light);
+        font-family: 'PT Sans', sans-serif;
+        text-decoration: none;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .main-logo svg {
+        margin: 0;
+        margin: 0 1rem;
+    }
+
+    nav {
+        flex-direction: row;
+        margin: 0;
+        margin-left: auto;
+    }
+
+    nav a {
+        margin: 0 1rem;
+    }
+
+
+}

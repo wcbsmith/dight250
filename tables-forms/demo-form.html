@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<link rel="stylesheet" href="demo-form.css" />
+
+		<title>DEMO: HTML Form</title>
+	</head>
+
+	<body>
+		<section>
+			<h1>DEMO: HTML Form</h1>
+
+			<form id="myForm" name="myForm" action="" method="">
+				<fieldset>
+					<legend>Part I</legend>
+
+					<p>
+						<label for="textInput">Text Input:</label>
+						<input id="textInput" name="textInput" type="text" placeholder="Sample text here" value="" />
+					</p>
+
+					<p>
+						<label for="textArea">Textarea:</label>
+						<textarea id="textArea" name="textArea" placeholder="Add your comment here"></textarea>
+					</p>
+
+					<p class="altStyle">
+						<label>
+							Option 1
+							<input id="radio1" name="radioInput" type="radio" value="Option1" />
+						</label>
+
+						<label>
+							Option 2
+							<input id="radio2" name="radioInput" type="radio" value="Option2" />
+						</label>
+
+						<label>
+							Option 3
+							<input id="radio3" name="radioInput" type="radio" value="Option3" />
+						</label>
+					</p>
+
+					<p>
+						<input id="btnSubmit" name="btnSubmit" type="submit" value="Submit" />
+					</p>
+				</fieldset>
+
+				<fieldset>
+					<legend>Part II</legend>
+
+					<p class="altStyle">
+						<label>
+							Option A
+							<input id="checkA" name="checkA" type="checkbox" value="OptionA" />
+						</label>
+
+						<label>
+							Option B
+							<input id="checkB" name="checkB" type="checkbox" value="OptionB" />
+						</label>
+
+						<label>
+							Option C
+							<input id="checkC" name="checkC" type="checkbox" value="OptionC" />
+						</label>
+					</p>
+
+					<p>
+						<label for="dropdown">Select/Dropdown</label>
+
+						<select id="dropdown" name="dropdown">
+							<option value="">-- Select One --</option>
+
+							<optgroup label="Group A">
+								<option>Item 1</option>
+								<option>Item 2</option>
+								<option>Item 3</option>
+							</optgroup>
+
+							<optgroup label="Group 2">
+								<option>Item A</option>
+								<option>Item B</option>
+								<option>Item C</option>
+							</optgroup>
+						</select>
+					</p>
+
+					<button id="btnSubmit2">Submit Here 2</button>
+				</fieldset>
+			</form>
+		</section>
+	</body>
+</html>

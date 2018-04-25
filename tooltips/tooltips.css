@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(46, 46, 51);
+  color: rgb(255, 255, 255);
+  font: small Verdana, Arial, sans-serif;
+  margin: 25px auto;
+  padding: 0 20px;
+  width: 960px;
+}
+
+a:link,
+a:visited { color: rgb(160, 160, 255); }
+
+a:hover,
+a:focus,
+a:active { color: rgb(240, 160, 0); }
+
+section {
+  background-color: rgb(62, 62, 85);
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+.tooltipcontainer,
+.tipcontainer { position: relative; }
+
+.tooltip {
+  display: block;
+  font-size: smaller;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 28px;
+  width: 150px;
+  z-index: 1;
+}
+
+.federation .tooltip {
+  background: rgb(192, 192, 255) url(images/starfleet.png) top left no-repeat;
+  color: rgb(46, 46, 51);
+  min-height: 54px;
+  padding-left: 64px;
+}
+
+.klingon .tooltip {
+  background: rgb(191, 0, 0) url(images/klingonempire.png) top left no-repeat;
+  color: rgb(255, 255, 255);
+  min-height: 54px;
+  padding-left: 64px;
+}
