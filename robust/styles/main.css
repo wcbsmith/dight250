@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width:300px) {
+    a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #F2F3F0;
+        display: block;
+        margin: 0 3rem;
+    }
+
+    nav {
+        width: 100%;
+        height: 6rem;
+        background-color: #212838;
+        text-align: center;
+        color: #F2F3F0;
+    }
+
+    html {
+        background-image: url(../images/veggie_background.jpg);
+        background-size: auto;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive; 
+        background-color: #384937;
+    }
+
+    html.enjoylife {
+        background-image: url(../images/icecream.jpg);
+        background-size:  cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;        
+    }
+
+    html.play {
+        background-image: url(../images/play.jpg);
+        background-size:  cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;        
+    }
+
+    html.veggies {
+        background-image: url(../images/veggies_color.jpg);
+        background-size:  cover;
+        background-position: top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;  
+        background-color: #384937;      
+    }
+}
+
+@media (min-width:550px) {
+    a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #F2F3F0;
+        display: block;
+        margin: 0 3rem;
+    }
+
+    nav {
+        width: 100%;
+        height: 6rem;
+        background-color: #212838;
+        text-align: center;
+        color: #F2F3F0;
+    }
+
+    html {
+        background-image: url(../images/veggie_background.jpg);
+        background-size: auto;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive; 
+        background-color: #384937;
+    }
+    
+    html.enjoylife {
+        background-image: url(../images/icecream.jpg);
+        background-size: cover;
+        background-position: top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;
+        background-color: #384937;        
+    }
+
+    html.play {
+        background-image: url(../images/play.jpg);
+        background-size:  cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;  
+        background-color: #384937;       
+    }
+
+    html.veggies {
+        background-image: url(../images/veggies_color.jpg);
+        background-size:  cover;
+        background-position: top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;  
+        background-color: #384937;      
+    }
+}
+
+@media (min-width:900px) {
+    a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #F2F3F0;
+        display: inline-block;
+        margin: 0 3rem;
+    }
+
+    nav {
+        width: 100%;
+        height: 2rem;
+        background-color: #212838;
+        text-align: center;
+        color: #F2F3F0;
+    }
+
+    html {
+        background-image: url(../images/veggie_background.jpg);
+        background-size: auto;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive; 
+        background-color: #384937;
+    }
+
+    html.enjoylife {
+        background-image: url(../images/icecream.jpg);
+        background-size: cover;
+        background-position: top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive; 
+        background-color: #384937;       
+    }
+
+    html.play {
+        background-image: url(../images/play.jpg);
+        background-size:  cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;  
+        background-color: #384937;      
+    }
+
+    html.veggies {
+        background-image: url(../images/veggies_color.jpg);
+        background-size:  cover;
+        background-position: top;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        font-family: 'Rammetto One', cursive;  
+        background-color: #384937;      
+    }
+}
+
+
+
+
+body {
+    /* align-content: center; */
+    background: #384937ab;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+} */
+
+h1 {
+    
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+}
+
+header {
+    background-color: #384937;
+}
+
+main {
+    background-color:#212838dd;
+    margin: 10%;
+    text-align: left;
+    border:10px;
+    padding: 5%;
+    color: #ffffff;
+    
+}
+
+p img {
+    width: 35%;
+    float: left;
+    margin: 5px;
+}

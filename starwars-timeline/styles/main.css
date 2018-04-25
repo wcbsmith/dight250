@@ -1,0 +1,155 @@
+:root {
+  --base: #151515;
+  --secondary: #282727;
+  --standard-spacing: 2rem;
+  --background: url('images/stars.png');
+  --fonts: 'Mukta Malar', sans-serif;
+  /*A variable can contain any value4rr*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html { box-sizing: border-box; }
+
+body {
+  background-color: var(--base, #cccccc); /*#cccccc is the backup incase I forgot to declare base*/
+  line-height: 1.4;
+  font-family: 'Mukta Malar', sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+  /* old way body{
+    background-color: #ff0000;
+  } 
+  new way */
+  :root {
+    --base: #2b2b2b;
+  } 
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 4em auto;
+}
+
+.section-title {
+  padding-bottom: 2em;
+  color: #cccccc;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  position: absolute;
+  top: -3em;
+  left: 2em;
+  width: .25em;
+  height: calc(100% + 6em);
+  background-image: linear-gradient(to bottom, var(--black) 0%, #cccccc 2%, #cccccc 98%, #151515 100%);
+  content: '';
+}
+
+@media screen and (min-width: 45em) {
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline__content {
+  display: block;
+  position: relative;
+  margin-left: 6em;
+  padding: 1em;
+  background-color: var(--secondary);
+}
+
+.timeline__content.special {
+  --secondary: #335263;
+}
+
+@media screen and (min-width: 45em) {
+  .timeline__content {
+    width: calc(50% - 4em);
+    margin-left: 0;
+  }
+}
+
+.timeline__content::before {
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: -1em;
+  border-top: 1em solid transparent;
+  border-right: 1em solid #282727;
+  border-bottom: 1em solid transparent;
+  content: '';
+}
+
+@media screen and (min-width: 45em) {
+  .timeline__content::before {
+    right: -1em;
+    left: auto;
+    border-right: 0;
+    border-left: 1em solid #282727;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .timeline__content--flipped { float: right; }
+
+  .timeline__content--flipped::before {
+    right: auto;
+    left: -1em;
+    border-right: 1em solid #282727;
+    border-left: 0;
+  }
+}
+
+.timeline__entry {
+  position: relative;
+  margin-bottom: 2em;
+  color: #ffffff;
+}
+
+.timeline__entry::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.timeline__heading {
+  margin-bottom: .25em;
+  font-size: 1.2rem;
+}
+
+.timeline__id {
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  padding: .5em 1em;
+  transform: translateX(-50%);
+  background-color: #282727;
+}
+
+@media screen and (min-width: 45em) {
+  .timeline__id {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline__text { color: #cccccc; }
+
+.timeline__text:last-child { margin-bottom: 0; }
